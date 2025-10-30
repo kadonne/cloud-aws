@@ -117,7 +117,7 @@ cloud-computing-project/
 │   └── docker-compose.yml         # Multi-container setup
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml             # CI/CD workflow
+│       └── ci_cd_pipeline.yml             # CI/CD workflow
 └── README.md
 ```
 
