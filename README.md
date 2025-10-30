@@ -559,7 +559,7 @@ aws ec2 describe-security-groups --group-ids <SG_ID>
 * ✅ Secrets stored in GitHub Secrets
 * ✅ VPC isolation
 
-### Recommended Improvements
+### Future Improvements
 
 * [ ] Restrict security group to specific IPs
 * [ ] Enable S3 bucket encryption
@@ -571,29 +571,6 @@ aws ec2 describe-security-groups --group-ids <SG_ID>
 * [ ] Enable VPC Flow Logs
 * [ ] Use AWS Systems Manager Session Manager instead of SSH
 * [ ] Implement least-privilege IAM policies
-
-### Production Considerations
-
-```hcl
-# Restrict SSH access
-ingress {
-  from_port   = 22
-  to_port     = 22
-  protocol    = "tcp"
-  cidr_blocks = ["YOUR_IP/32"]  # Your IP only
-}
-
-# Restrict application access
-ingress {
-  from_port   = 3000
-  to_port     = 3000
-  protocol    = "tcp"
-  cidr_blocks = ["0.0.0.0/0"]  # Or specific ranges
-}
-
-# Remove unrestricted ingress
-# Delete the 0.0.0.0/0 all-traffic rule
-```
 
 ## Cost Considerations
 
