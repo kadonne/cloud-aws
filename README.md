@@ -151,8 +151,8 @@ Configure these secrets in GitHub repository settings:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/cloud-computing-project.git
-cd cloud-computing-project
+git clone https://github.com/kadonne/cloud-aws.git
+cd cloud-aws
 ```
 
 ### 2. Configure AWS Credentials
